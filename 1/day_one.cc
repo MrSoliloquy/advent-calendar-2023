@@ -18,7 +18,7 @@
  * @return vector of the of the sum of calories of each elf
 */
 std::vector<int> readFile() {
-  std::ifstream file("calories.txt");
+  std::ifstream file("calories.txt", std::ios::in);
   if (!file.is_open()) {
     std::cerr << "The file could not be open!" << std::endl;
     exit(EXIT_FAILURE);
